@@ -1,0 +1,12 @@
+:root { --bg: #fdf8f3; --fg: #2b2118; --accent: #c4622d; --card: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1d1a17; --fg: #eee6dc; --accent: #f08a4b; --card: #2a2622; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; background: var(--bg); color: var(--fg); line-height: 1.6; }
+main { max-width: 680px; margin: 0 auto; padding: 2rem 1rem; }
+h1 { color: var(--accent); }
+nav ul { list-style: none; padding: 0; display: grid; gap: 1rem; }
+nav a { display: block; padding: 1rem 1.25rem; background: var(--card); border-radius: 10px; text-decoration: none; color: var(--fg); box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+nav a:hover { color: var(--accent); }
+.back { color: var(--accent); }
